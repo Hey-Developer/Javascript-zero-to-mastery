@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-With-Forms</title>
+</head>
+
+<body>
+    <h1>Form-Handling</h1>
+    <hr />
+    <form action="form-handling.html" name="myForm1" id="myForm1" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Login-Form</legend>
+            <label for="un">UserName: </label>
+            <input type="text" name="userName" id="un" /><br /><br />
+
+            <label for="up">PassWord:</label>
+            <input type="password" name="userPass" id="up" /><br /><br />
+
+            <input type="submit" value="LOGIN" />
+        </fieldset>
+    </form>
+    <br />
+    <form action="#" name="myForm2" id="myForm2">
+        <fieldset>
+            <legend>Registration-Form</legend>
+            <label for="">FirstName: </label>
+            <input type="text" name="firstName" /><br /><br />
+
+            <label for="">LastName: </label>
+            <input type="text" name="lastName" /><br /><br />
+
+            <label for="">Email: </label>
+            <input type="email" name="email" /><br /><br />
+
+            <label for="userPass">PassWord:</label>
+            <input type="password" name="userPass" /><br /><br />
+
+            <label for="repeatUserPass">Repeat Pass:</label>
+            <input type="password" name="repeatUserPass" /><br /><br />
+
+            <input type="submit" value="Register" />
+        </fieldset>
+    </form>
+
+    <script src="form-handling.js"></script>
+    <script src="form-validate.js"></script>
+</body>
+
+</html>

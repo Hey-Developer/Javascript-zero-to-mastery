@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="myH1">Html Attributes VS Dom Property</h1>
+    <p id="myPara" class="myP" title="intro">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius alias quisquam, laudantium nostrum recusandae odit iusto voluptates sit iste, omnis modi aliquam labore maxime beatae distinctio incidunt expedita id repellendus similique cupiditate, sequi
+        est? Earum quia eligendi minima molestiae, ipsum autem repellat iste accusantium vero at fugit? Inventore velit error nisi, eum pariatur, ullam dicta blanditiis odio modi hic explicabo architecto aliquid voluptas fugiat mollitia repudiandae eaque
+        porro distinctio itaque quia reiciendis, laborum maxime minima? Maxime cupiditate nulla quo deleniti ratione, in ipsa alias culpa magni eos, ad, similique eligendi distinctio sed! Nostrum eaque id consequatur est fugit nulla eveniet!
+    </p>
+
+    <script>
+        /* 
+                                              The attributes which u see in The HTML element like here in p element attributes are id,class,title are attributes.
+                                              > These are called HTML attributes.
+
+                                              Whereas I a DOM tree the p element is node and a node can have different properties of its own or some are inherited fro superclasses NODE,HTML ELEMENT etc.
+                                              > These properties are known as DOM Properties like nodeName,nodeValue,parentNode, 
+                                                also DOM tree node can contain attributes property to access the HTML attributes of the element.
+                                                for ex- id,title,className etc.
+                                            */
+
+        var p = document.getElementById("myPara");
+        console.log(`Id of p element is: ${p.id}`);
+        console.log(`Class of p element is: ${p.className}`);
+        console.log(`Title of p element is: ${p.title}`);
+
+        // We can also manipulate the attributes of the html element.
+        p.title = " Cnu";
+
+        // Now when u see the element in console u will see that value of its title attribute is change.
+        console.log(p);
+    </script>
+</body>
+
+</html>

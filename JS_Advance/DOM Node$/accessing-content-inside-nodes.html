@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1 id="myH1">Accessing-Content-Inside-Nodes</h1>
+    <p id="myPara">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima laboriosam laudantium officiis non asperiores vero nisi mollitia inventore porro, officia cum beatae, fuga commodi eius sunt ex impedit temporibus molestias.
+    </p>
+    <div id="myDiv">
+        <ul id="myList">
+            <li id="i1">Item 1</li>
+            <li id="i2">Item 2</li>
+            <li id="i3">Item 3</li>
+            <li id="i4">Item 4</li>
+        </ul>
+    </div>
+    <p id="demo">
+        This element has extra spacing and contains <span>a span element</span>.
+    </p>
+    <button onclick="getInnerText()">Get innerText</button>
+    <button onclick="getHTML()">Get innerHTML</button>
+    <button onclick="getTextContent()">Get textContent</button>
+    <hr />
+    <!-- On a fully loaded doc when u use document.write it will delete every html element -->
+    <input type="button" value="click" onclick="document.write('Hey Did i just delete the data of whole doc!!!-_-')" />
+    <!-- <script src="innerHTML.js"></script> -->
+    <!-- <script src="outerHTML.js"></script> -->
+    <!-- <script src="innerText.js"></script> -->
+    <script src="write()-&-writeln().js"></script>
+</body>
+
+</html>

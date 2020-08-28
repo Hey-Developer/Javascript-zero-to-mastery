@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM_EVENTS:</title>
+    <style>
+        #one {
+            width: 75vw;
+            height: 75vh;
+            background-color: orange;
+        }
+        
+        #two {
+            width: 75%;
+            height: 75%;
+            background-color: yellowgreen;
+        }
+        
+        #three {
+            width: 75%;
+            height: 75%;
+            background-color: blueviolet;
+        }
+        
+        #four {
+            width: 75%;
+            height: 75%;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Target VS CurrentTarget</h1>
+    <hr />
+
+    <div id="one" data-name="1">
+        1
+        <div id="two" data-name="2">
+            2
+            <div id="three" data-name="3">
+                3
+                <div id="four" data-name="4">4</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Target-vs-Currenttarget.js"></script>
+</body>
+
+</html>

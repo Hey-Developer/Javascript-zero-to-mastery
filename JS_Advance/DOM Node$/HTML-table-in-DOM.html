@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+        #myTable {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr {
+            text-align: center;
+        }
+        
+        th,
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="myTable" border="1">
+        <caption>
+            My Table
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>CNU</td>
+                <td>JS</td>
+                <td id="myRow">90</td>
+            </tr>
+
+            <tr>
+                <td>Punit</td>
+                <td>SE</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>Shivani</td>
+                <td>ADA</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Nishnat</td>
+                <td>SE</td>
+                <td>78</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>ADA</td>
+                <td>99</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Highest %-></th>
+                <th>100</th>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- <script src="html-table-element-in-DOM.js"></script> -->
+    <!-- <script src="HTMLTableSectionElement.js"></script> -->
+    <script src="HTMLTableRowElement.js"></script>
+</body>
+
+</html>

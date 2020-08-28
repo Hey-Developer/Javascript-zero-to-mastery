@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse-Event:</title>
+    <style>
+        #one,
+        #three {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: tomato;
+        }
+        
+        #two,
+        #four {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mouse-Event</h1>
+    <hr />
+    <div id="one">
+        one
+        <div id="two">two</div>
+    </div>
+    <hr />
+    <h2>Events in Bubbling Phase--></h2>
+    <div id="three">
+        Three
+        <div id="four">Four</div>
+    </div>
+
+    <script src="Mouse-Event.js"></script>
+</body>
+
+</html>

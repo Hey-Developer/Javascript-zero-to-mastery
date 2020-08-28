@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOCUS EVENTS:</title>
+    <style>
+        * {
+            transition: all 0.5s;
+        }
+        
+        .onFocus {
+            background-color: tomato;
+            padding: 10px;
+            outline: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Focus events:</h1>
+
+    <form action="#">
+        <fieldset>
+            <legend>FOCUSE ON TEXT_FIELDS:</legend>
+            <label for="un">First name:</label><br />
+            <input type="text" id="un" name="fname" placeholder="username" class="on" /><br />
+            <label for="pw">Last name:</label><br />
+            <input type="text" id="pw" name="lname" placeholder="password" class="on" /><br /><br />
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+    <script src="focus-event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM-Validation</title>
+    <link rel="stylesheet" href="form-style.css" />
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <hr />
+
+    <div id="myForm">
+        <form action="#" name="form1">
+            <input type="text" name="username" placeholder="Username" />
+            <p>Username must be alphanumeric and contain 5-15 characters</p>
+
+            <input type="password" name="password" placeholder="Password" />
+            <span id="pw"></span>
+            <span>
+          <input type="checkbox" name="showPass" id="show" /> Show password
+        </span>
+            <p>
+                Password must be alphanumeric ,at least 8 characters, (@,_,$) are allowed
+            </p>
+
+            <input type="email" name="email" placeholder="Email" />
+            <p>Email must be a valid address. EX- abcd@xyz.com</p>
+
+            <input type="tel" name="number" placeholder="Mobile-Number" />
+            <p>
+                Telephone number must be valid Indian telephone number(10 digit) should start from +91-
+            </p>
+
+            <span><input type="checkbox" name="check" id="check" /> Accepts Terms and
+          Conditions -_-</span
+        ><br />
+
+        <button id="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <script src="validation-basics.js"></script>
+  </body>
+</html>
