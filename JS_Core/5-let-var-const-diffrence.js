@@ -1,7 +1,7 @@
-/* 
+/*
 ? Problem with var is that its scope is not only limited to block level its scope is accessible through the functon.
-* so from ES6 new keywords are introdued let and const 
-* these two varibale create block level scope 
+* so from ES6 new keywords are introdued let and const
+* these two varibale create block level scope
 example--
 */
 function start() {
@@ -24,11 +24,11 @@ start();
     4
     5(this prints outside the loop)
     here we use var as a result it is fucntion scoped elemnt thereforce
-    it can be accessible in the whole function 
+    it can be accessible in the whole function
     but we need a variable who's scope is limited to the block i.e
-    here the block is for loop so we want that there should be a variable i which cannont 
-    be accessed outside the for loop; 
-    
+    here the block is for loop so we want that there should be a variable i which cannont
+    be accessed outside the for loop;
+
  */
 
 //  todo -solution is let keyword-->
@@ -46,7 +46,7 @@ function start1() {
 }
 
 start1();
-/* 
+/*
 output:
     0
     1
@@ -56,13 +56,13 @@ output:
     !error:ReferenceError: i is not define
  */
 
-/* 
-? problem2: when u create global variable using var 
+/*
+? problem2: when u create global variable using var
   the varible will get attached to the window object of the documnet
   which result in complexities i.e
   when u will use 3rd party liabraries or frameworks there will be a complexion if ur variable name matches
   with the variable name of the liabraries and frameworks
-  on the other side 
+  on the other side
   let variables do nto get attach to the window object hence they are
   seprated from all the complexities.
  */

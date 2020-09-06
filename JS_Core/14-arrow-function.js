@@ -1,4 +1,4 @@
-/* 
+/*
 Arrow Function Expression is:
     >has a shorter syntax compared to function expression
     >Arrow function is anonymous
@@ -20,7 +20,7 @@ var show1 = () => {
     console.log("Show1");
 };
 show1();
-/* 
+/*
 ~You cannot call a arrow function before its declaration
 ~ You can give a line break between () and => u can give a whitespace.
  */
@@ -30,7 +30,7 @@ let show2 = a => {
     console.log("Show2 : " + a);
 };
 show2(5);
-/* 
+/*
  ~If you are giving only one parameter then it is not necessary to use (),parenthesis
     You can also write above code as-->
     let show2 = a => {

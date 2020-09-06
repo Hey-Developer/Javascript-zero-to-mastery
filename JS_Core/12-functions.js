@@ -1,4 +1,4 @@
-/* 
+/*
 ?   A JavaScript function is a block of code designed to perform a particular task.
 ?   A JavaScript function is executed when "something" invokes it (calls it).
 
@@ -20,7 +20,7 @@ function displayName() {
 }
 
 //  ? Calling a function--Syntax or Function Invocation
-/* 
+/*
     When an event occurs (when a user clicks a button)
     When it is invoked (called) from JavaScript code
     Automatically (self invoked)
@@ -29,17 +29,17 @@ function displayName() {
 // * function_Name(arguments);
 displayName();
 
-/* 
+/*
 ? Function Naming Rule-->
     1.You can use a-z or A-Z or _ or $ or 0-9
     2.Name cannot start with number
-    3.NAme cannot bea reserved keywords
+    3.NAme cannot be a reserved keywords
     4.Function Name is case-sensitive
  */
 
 //  $ You can also call/invoke a function before defining it but this rule is valid for general function.
 
-/* 
+/*
  ? Function with parameters-->
  * javascript function definitions do ot specify data types for parameters.
  * javascript function do not perform type checking on the passed arguments
@@ -47,7 +47,7 @@ displayName();
 
  */
 
-/* 
+/*
 ? If i do this-
 function add(let a,let b){
     console.log(a+b);
@@ -60,7 +60,7 @@ function cloves(a, b) {
 
 cloves("Divyan", "Shraddha");
 
-/* 
+/*
 ? Function Arguments Missing-->
 In this case-
     function add(a,b,c)
@@ -86,7 +86,7 @@ function add(a, b, c, d) {
 
 add(2, 3, 4);
 
-/* 
+/*
 * Arguments Object *
 let us take a example -
     function add(num1,num2){
@@ -139,7 +139,7 @@ function subtract(a, b, c) {
 
 subtract(2, 5, 6);
 
-/* 
+/*
 ? Too many Arguments:
     what if we define a function with 2 parameters but
     at the time of calling the function is passed with more than 2 arguments then
@@ -166,7 +166,7 @@ function addition(a, b, c) {
 
 addition(1, 2, 3, 5);
 
-/* 
+/*
  ? Default Parameters
  in case user didn't pass any arguments then we can set a default value to the function parameters in function definition
  this is called default parameter.
@@ -178,11 +178,11 @@ addition(1, 2, 3, 5);
         //Block_of_code
     }
 syntax-
-    function add(a,b=0,c) 
+    function add(a,b=0,c)
     {
         //Block_of_code
     }
-   
+
 syntax-
     function add(a, b=1,c=0)
     {
@@ -203,7 +203,7 @@ function show(a, b, c = 0) {
 // show(10, 20, 30);
 show(10, 20);
 
-/* 
+/*
 ? conclusion:-
     1.If user didn't pass the value of the argument then in the function definition it will be undefined
     2.if u set a default value for a parameter:-
@@ -257,7 +257,7 @@ let fullNameMaker = function(firstname, lastname) {
 fullNameMaker("john", "doe");
 fullNameMaker; // #Accessing a function without () will return the function object instead of the function result.
 
-/* 
+/*
 $ Rest Parameters:(in java var args)
     the rest parameters allows us to represent an indefinite number of arguments as an array.
 Syntax-1
@@ -297,7 +297,7 @@ function addN2(...num) {
 
 addN2("Hii", "Its", "ME");
 
-/* 
+/*
     function addN3(...num, a) {
         console.log(num);
         console.log(a);
@@ -306,13 +306,13 @@ addN3(1, 2, 3, 4, 5)
 ! SyntaxError : Rest parameter should be the last formal parameter.
  */
 
-/* 
+/*
 * Rest Vs Arguments *
     1.Rest ParaMeters are the only that ones that haven't been given a separate name,
       while the arguments object contains all arguments passed to the function.
 
     2.The ArgumentsObject is not a real array ,while rest parameters are array instances,meaning methods like sort, map,foreach,or pop can be applied on it directly.
-    
+
     3. The arguments object has addition functionality specific to itself like the callee property
  */
 console.log("Rest arguments VS Arguments Object");
@@ -331,7 +331,7 @@ function argumentShow(a) {
 }
 argumentShow(10, 20, 30, 40, 50);
 
-/* 
+/*
 So here in this case we learn that in case of rest parameter the value is rest of the arguments that is it does not
 include previous parameter values but
 in case of argumnet object in contain values of all the parameter including previous ones and extra ones.
@@ -365,7 +365,7 @@ var myFunction = new Function("a", "b", "return a * b");
 var x = myFunction(4, 3);
 console.log(x);
 
-/* 
+/*
 # Hoisting applies to variable declarations and to function declarations.
   ! Because of this, JavaScript functions can be called before they are declared:
 */
@@ -375,7 +375,7 @@ function myFunction(y) {
     return y * y;
 }
 
-/* 
+/*
 $ Self-Invoking function:
   > Function expressions can be made "self-invoking".
 
